@@ -1,14 +1,165 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url("https://necolas.github.io/normalize.css/8.0.0/normalize.css");
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+body {
+  background: #e96443;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #904e95, #e96443);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#904e95), to(#e96443));
+  background: -webkit-linear-gradient(left, #904e95, #e96443);
+  background: -o-linear-gradient(left, #904e95, #e96443);
+  background: linear-gradient(to right, #904e95, #e96443);
+  font-family: Arial, Helvetica, sans-serif; }
+
+.contenedor {
+  max-width: 600px;
+  margin: 0 auto; }
+
+.boton {
+  background-color: #00838F !important;
+  font-size: 16px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.boton:hover {
+  cursor: pointer; }
+
+header {
+  background-color: #26C6DA;
+  padding: 10px;
+  font-weight: bold;
+  color: white; }
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-family: 'Slabo 27px', serif;
+  text-align: center; }
+
+.contenedor-formulario {
+  background-color: white;
+  padding: 3rem; }
+
+.campo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.campo label {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 200px;
+  flex: 0 0 200px; }
+
+.campo input[type="radio"] {
+  margin: 1rem; }
+
+.error {
+  background-color: #FBE9E7;
+  border: 1px solid #F4511E;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #F4511E; }
+
+.correcto {
+  background-color: #d3f9bb;
+  border: 1px solid #32a700;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #049632; }
+
+.error p {
+  margin: 0; }
+
+.contenido {
+  margin-top: 60px;
+  background-color: white;
+  -webkit-box-shadow: 0px 21px 46px -15px black;
+  -moz-box-shadow: 0px 21px 46px -15px black;
+  box-shadow: 0px 21px 46px -15px black; }
+
+.resultado {
+  margin-bottom: 40px; }
+
+.resultado div {
+  border: 1px solid #26C6DA;
+  text-align: center;
+  padding: 0  0 20px 0; }
+
+.resultado div p {
+  margin-bottom: 0; }
+
+.resultado div p.header {
+  background-color: #26C6DA;
+  margin-bottom: 10px;
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+span.resultado {
+  position: relative;
+  width: 100%; }
+
+.resultado-enter {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  -webkit-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  transform: translateY(120%); }
+
+.resultado-enter.resultado-enter-active {
+  -webkit-transform: translateY(120%);
+  -ms-transform: translateY(120%);
+  transform: translateY(120%); }
+
+.resultado-exit {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; }
+
+.resultado-exit-active {
+  opacity: 0;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%); }
+
+.gran-total {
+  text-align: center;
+  padding: .5rem;
+  border: 1px solid #26C6DA;
+  background-color: #7fe0ed;
+  margin-top: 1rem; }
+
+.resumen {
+  padding: 1rem;
+  text-align: center;
+  background-color: #00838F;
+  color: white;
+  margin-top: 1rem; }
+
+.resumen li {
+  list-style: none; }
+
+.resumen h2 {
+  margin: 0 0 1rem 0; }
